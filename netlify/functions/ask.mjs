@@ -6,12 +6,12 @@ Mention relevant caveats: in inverse flames the O2 value is the burner's; BASS-I
 PSI has no partial-gravity combustion data; FLEX helium groups had lower oxygen.
 Be concise: 3 to 7 sentences or a short bullet list. Plain text; you may use **bold** and "- " bullets.`;
 
+const MODELS = ["gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"];
+
 async function callGemini(model, key, lang, context, question) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
-  const generationConfig = { temperature: 0.2, maxOutputTokens: 1200 };
-  if (model.startsWith("gemini-2.5")) generationConfig.thinkingConfig = { thinkingBudget: 0 };
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 20000);
+  const timer = setTimeout(() => ctrl.abort(), 25000);
   try {
     return await fetch(url, {
       method: "POST",
@@ -20,7 +20,7 @@ async function callGemini(model, key, lang, context, question) {
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: `${SYSTEM}\nAnswer in ${lang}.` }] },
         contents: [{ role: "user", parts: [{ text: `${context}\n\nQUESTION: ${question}` }] }],
-        generationConfig,
+        generationConfig: { maxOutputTokens: 1200 },
       }),
     });
   } finally {
@@ -35,7 +35,6 @@ export default async (req) => {
     console.log("ERROR: GEMINI_API_KEY is empty or missing");
     return Response.json({ error: "GEMINI_API_KEY is not set in Netlify" }, { status: 503 });
   }
-  console.log(`Key loaded: length ${key.length}, starts with ${key.slice(0, 4)}, ends with ${key.slice(-4)}`);
   let body;
   try { body = await req.json(); } catch { return Response.json({ error: "invalid JSON" }, { status: 400 }); }
   const question = String(body.question || "").slice(0, 600).trim();
@@ -43,32 +42,31 @@ export default async (req) => {
   const lang = body.lang === "es" ? "Spanish" : "English";
   if (!question) return Response.json({ error: "empty question" }, { status: 400 });
 
-  let model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-  let r;
-  try {
-    r = await callGemini(model, key, lang, context, question);
-    if (r.status === 404 && !process.env.GEMINI_MODEL) {
-      console.log(`Model ${model} not found, trying gemini-flash-latest`);
-      model = "gemini-flash-latest";
+  const models = process.env.GEMINI_MODEL ? [process.env.GEMINI_MODEL] : MODELS;
+  for (const model of models) {
+    let r;
+    try {
       r = await callGemini(model, key, lang, context, question);
+    } catch (e) {
+      console.log(`ERROR calling ${model}: ${e.name} ${e.message}`);
+      return Response.json({ error: "gemini_timeout_or_network", detail: e.message }, { status: 504 });
     }
-  } catch (e) {
-    console.log(`ERROR calling Gemini (${model}): ${e.name} ${e.message}`);
-    return Response.json({ error: "gemini_timeout_or_network", detail: e.message }, { status: 504 });
+    if (r.status === 404) { console.log(`Model ${model} not found, trying next`); continue; }
+    if (!r.ok) {
+      const detail = (await r.text()).slice(0, 500);
+      console.log(`ERROR from ${model}: status ${r.status} ${detail}`);
+      return Response.json({ error: "gemini_error", status: r.status, detail }, { status: 502 });
+    }
+    const j = await r.json();
+    const text = (j.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("").trim();
+    if (!text) {
+      console.log(`ERROR: empty answer from ${model}: ${JSON.stringify(j).slice(0, 300)}`);
+      return Response.json({ error: "empty answer" }, { status: 502 });
+    }
+    console.log(`OK: answered with ${model}`);
+    return Response.json({ text, model });
   }
-  if (!r.ok) {
-    const detail = (await r.text()).slice(0, 500);
-    console.log(`ERROR from Gemini (${model}): status ${r.status} ${detail}`);
-    return Response.json({ error: "gemini_error", status: r.status, detail }, { status: 502 });
-  }
-  const j = await r.json();
-  const text = (j.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("").trim();
-  if (!text) {
-    console.log(`ERROR: empty answer from ${model}: ${JSON.stringify(j).slice(0, 300)}`);
-    return Response.json({ error: "empty answer" }, { status: 502 });
-  }
-  console.log(`OK: answered with ${model}`);
-  return Response.json({ text, model });
+  return Response.json({ error: "no available model" }, { status: 502 });
 };
 
 export const config = { path: "/api/ask" };
