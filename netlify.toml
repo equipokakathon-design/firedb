@@ -1,0 +1,7 @@
+# Netlify configuration for FireDB (all site files live in the repository root)
+[build]
+  publish = "."
+  command = ""
+
+[functions]
+  directory = "netlify/functions"

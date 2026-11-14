@@ -1,0 +1,182 @@
+psi_id,investigacion,archivo,referencia,campo,valor_original,valor_corregido,problema,accion
+PSI-26,BASS,PSI-26_BASS.csv,46,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,47,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,48,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,49,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,22,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,23,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,24,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,25,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,58,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,59,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,60,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,61,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,34,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,35,material,1 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,111,material,2 cm sphere   wake ign,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,112,material,2 cm sphere   wake ign,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,113,material,2 cm sphere   wake ign,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,nan,Fuel Sample Material,SOOT Cleaning,,"Fila de limpieza, no es prueba",excluida de tests
+PSI-26,BASS,PSI-26_BASS.csv,103,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,104,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,105,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,38,material,1 cm sphere   wake,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,39,material,1 cm wake sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,40,material,1 cm wake sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,51,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,52,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,53,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,106,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,107,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,108,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-26,BASS,PSI-26_BASS.csv,109,material,2 cm sphere,PMMA,Material no indicado,PMMA inferido por la geometría
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B2,O2 final,1.6,,Valor físicamente implausible (error de calibración),anulado
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B3,material,100 micron film   2 cm wide,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B5,material,200 micron  2 cm wide,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B7,material,400 micron film   2 cm wide,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B12,material,300 micron film   2 cm wide,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,B13,material,2 cm   0.4 mm thick film,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O1,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O2,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O3a,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O3b,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O4,material,"3/8""clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O6,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O7,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O8a,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O8b,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O9,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O10,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O11,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O12,material,"3/8"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O14,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O15a,material,"3/8"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O15b,material,"3/8"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O16,material,"3/8""clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O17,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O18,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O19,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O20,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O21,material,"3/8"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O22,material,"1/2"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P1,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P2,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P3a,material,"1/4"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P3b,material,1/4 clear rod,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P4,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P5,material,"0.5"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P6,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P8,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P9,material,"0.5"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P10,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P12,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P13a,material,"0.5"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P13b,material,"0.5"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P14,material,1/4 blac rod,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P15,material,1/4 black rod,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P16,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P17,material,"1/4""  black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P18,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P19,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P20,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P21a,material,1/4 black rod,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P21b,material,"1/4"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P22a,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P22a,O2 final,0.6,,Valor físicamente implausible (error de calibración),anulado
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P22b,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P22b,O2 final,39.1,,Valor físicamente implausible (error de calibración),anulado
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P23,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P24,material,"3/8"" black rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,P25,material,"3/8"" clear rod",PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T3,material,4 cm spherical section,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T7,material,4 cm spherical section,PMMA,Material no indicado,PMMA inferido por la geometría (varilla/película)
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T28a,O2 final,0.9,,Valor físicamente implausible (error de calibración),anulado
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T28b,O2 final,40.4,,Valor físicamente implausible (error de calibración),anulado
+PSI-25,BASS-II,PSI-25_BASS-II.csv,todas,Air display,,,"Lectura de pantalla del flujo de aire, a veces con varios ajustes por prueba",flujo_cm_s = primer valor; texto completo en flujo_texto
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,S1,largo/ancho,40.6/94.0,94.0/40.6,Largo y ancho invertidos respecto a Saffire-III y al artículo (94 × 40.6 cm),intercambiados
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,S1,espesor,0.37 cm,3.7 mm,Posible error de unidades (SIBAL mide 0.33–0.37 mm en Saffire-II),se conserva el valor de la tabla con bandera
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,S2,largo/ancho,40.6/94.0,94.0/40.6,Largo y ancho invertidos respecto a Saffire-III y al artículo (94 × 40.6 cm),intercambiados
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,S2,espesor,0.37 cm,3.7 mm,Posible error de unidades (SIBAL mide 0.33–0.37 mm en Saffire-II),se conserva el valor de la tabla con bandera
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,F1C1/F1C2,fila,Pre-test flow visulation data for sample 1,,"Fila de visualización de flujo, no es prueba",excluida de tests
+PSI-98,SAFFIRE-I,PSI-98_SAFFIRE-1.csv,F2C1/F2C2,fila,Pre-test flow visulation data for sample 2,,"Fila de visualización de flujo, no es prueba",excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-4,Sample Thickness,037 mm,0.37 mm,Falta el punto decimal,corregido
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-5,Sample Thickness,037 mm,0.37 mm,Falta el punto decimal,corregido
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-6,Material,,SIBAL (algodón/fibra de vidrio),Material vacío,inferido de la tabla 1 del artículo Saffire 2016
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-6,Sample Thickness,037 mm,0.37 mm,Falta el punto decimal,corregido
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-6,Air Flow,20 cm/s,,Discrepancia con el plan (30 cm/s en el artículo de 2016),se conserva la tabla; verificar
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-8,Sample Thickness,See Fig. 5,,Referencia a figura en vez de valor,anulado
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-8,ug Spread Length,Note 4,,Referencia a nota en vez de valor,anulado; ver notas
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-9,Material,,PMMA,Material vacío,inferido de la tabla 1 del artículo Saffire 2016
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-9,Air Flow,20 cm/s,,Discrepancia con el plan (30 cm/s en el artículo de 2016),se conserva la tabla; verificar
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,2-9,ug Spread Length,Note 4,,Referencia a nota en vez de valor,anulado; ver notas
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,F1C1/F1C2,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,F2C1/F2C2,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,Note 1 Derived from measured CO2 product,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,Note 2 The PMMA portion was completely c,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,Note 3 This is the length of fuel with s,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-99,SAFFIRE-II,PSI-99_SAFFIRE-2.csv,Note 4 The flames remain anchored at the,fila,,,Fila de notas o de visualización dentro de los datos,excluida de tests
+PSI-100,SAFFIRE-III,PSI-100_SAFFIRE-3.csv,"S1,S2",unidades,"30 cm/s, .33 cm","30, 3.3",Unidades dentro del valor,extraído el número; espesor con bandera
+PSI-102,SAME,PSI-102_SAME.csv,5-8,Sample Material,'Kapton: same conditions as 1-4',4 condiciones × 5 materiales,Matriz comprimida en texto,expandida a 20 filas en sessions
+PSI-101,SAME-R,PSI-101_SAME-R.csv,todas,Date,21-Jul,,La fecha no incluye el año,se guarda como texto (fecha_texto)
+PSI-69,FLEX,PSI-69_FLEX.csv,C11M201,Ambient pressure,0.0 mmHg,,Presión 0 mmHg imposible,anulada
+PSI-69,FLEX,PSI-69_FLEX.csv,todas,Burning rate; mm,,mm²/s,Unidad truncada en el encabezado,interpretada como mm²/s (constante de quemado)
+PSI-68,FLEX-2,PSI-68_FLEX-2.csv,todas,rangos,0.17; 0.21;0.25; 0.3,listas numéricas,Varios valores en una celda,separados en o2_lista / min / max
+PSI-39,CFI,PSI-39_CFI_DataSummary.xlsx,todas,hojas,5 hojas,1 tabla,Datos repartidos en hojas,unidas por Flex Number
+PSI-39,CFI,PSI-39_CFI_DataSummary.xlsx,todas,unidades,"'1 atm', '12 w', '3700 ms'","1, 12, 3.7 s",Unidades dentro del valor,extraído el número; ms→s
+PSI-159,ACME-CFI-G,PSI-159_CFI-G_Inverse.csv,-,filas,154,154,Filas vacías o sin número de prueba,eliminadas
+PSI-159,ACME-CFI-G,PSI-159_CFI-G_Inverse.csv,-,Flame Type/Hot ignition/Color,"Inverse/inverse, Yes/yes, Yellow/yellow",minúsculas,Mayúsculas inconsistentes,normalizado
+PSI-159,ACME-CFI-G,PSI-159_CFI-G_*.csv,todas,approx p (bar),bar,atm,Unidad distinta al resto,convertido a atm
+PSI-10,ACME-FLAME-DESIGN,PSI-10_FlameDesign_Normal.csv,19115D2,Xfuel…Tad,RAMPED,,Texto en columnas numéricas,valores anulados; prueba conservada
+PSI-10,ACME-FLAME-DESIGN,PSI-10_FlameDesign_Normal.csv,19115B2,Xfuel…Tad,RAMPED,,Texto en columnas numéricas,valores anulados; prueba conservada
+PSI-10,ACME-FLAME-DESIGN,PSI-10_FlameDesign_Normal.csv,19115G1,Xfuel…Tad,RAMPED,,Texto en columnas numéricas,valores anulados; prueba conservada
+PSI-20,ACME-BRE,PSI-20_ACME_BRE.csv,2019-March-7,Oxygen Conc,3400%,34,Formato de porcentaje de Excel (×100),corregido
+PSI-20,ACME-BRE,PSI-20_ACME_BRE.csv,2019-April-1,Oxygen Conc,2100%,21,Formato de porcentaje de Excel (×100),corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,17324,Fuel Bottle,40% CH5,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,17342,Fuel Bottle,40% CH6,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,17356,Fuel Bottle,40% CH7,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18003,Fuel Bottle,40% CH8,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18005,Fuel Bottle,40% CH9,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18008,Fuel Bottle,40% CH10,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18011,Fuel Bottle,40% CH11,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18022,Fuel Bottle,40% CH12,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18026,Fuel Bottle,40% CH13,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18032,Fuel Bottle,40% CH14,40% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18043,Fuel Bottle,100% CH5,100% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18053,Fuel Bottle,100% CH6,100% CH4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18151,Fuel Bottle,100% C2H5,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18177,Fuel Bottle,100% C2H6,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18186,Fuel Bottle,100% C2H7,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18192,Fuel Bottle,100% C2H8,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18199,Fuel Bottle,100% C2H9,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18214,Fuel Bottle,100% C2H10,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18218,Fuel Bottle,100% C2H11,100% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18239,Fuel Bottle,50% C2H5,50% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18241,Fuel Bottle,50% C2H6,50% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18249,Fuel Bottle,50% C2H7,50% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18253,Fuel Bottle,50% C2H8,50% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,18257,Fuel Bottle,50% C2H9,50% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,21046,Fuel Bottle,30% C2H5,30% C2H4,Error de autollenado de Excel,corregido
+PSI-21,ACME-CLD,PSI-21_ACME_CLD.csv,21062,Fuel Bottle,40% CH5,40% CH4,Error de autollenado de Excel,corregido
+PSI-22,ACME-E-FIELD,PSI-22_ACME_E-FIELD.csv,18319,fila,,,Día de prueba duplicado,eliminado
+PSI-22,ACME-E-FIELD,PSI-22_ACME_E-FIELD.csv,-,filas,,,Filas de continuación con otras concentraciones de combustible,agrupadas por día de prueba
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,19256,Atmosphere/Fuel Bottle,~21% O2 with N3 | 50% C2H4 with N3,~21% O2 with N2 | 50% C2H4 with N2,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,19304,Atmosphere/Fuel Bottle,~21% O2 with N4 | 45% CH4 with N2,~21% O2 with N2 | 45% CH4 with N2,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,19308,Atmosphere/Fuel Bottle,~30% O2 with N2 | 45% CH4 with N3,~30% O2 with N2 | 45% CH4 with N2,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,20006,Atmosphere/Fuel Bottle,~21% O2 with N3 | 44.4% H2 with CH4,~21% O2 with N2 | 44.4% H2 with CH4,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,20013,Atmosphere/Fuel Bottle,~21% O2 with N4 | 66.7% H2 with CH4,~21% O2 with N2 | 66.7% H2 with CH4,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,20024,Atmosphere/Fuel Bottle,~21% O2 with N5 | 100% H2,~21% O2 with N2 | 100% H2,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-23,ACME-S-FLAME,PSI-23_ACME_s-Flame.csv,20029,Atmosphere/Fuel Bottle,~21% O2 with N6 | 50% C2H4 with N2,~21% O2 with N2 | 50% C2H4 with N2,"Error de autollenado de Excel (N3, N4…)",corregido a N2
+PSI-106,SLICE,PSI-106_SLICE.csv,2012-FEB-13,Test Date,2012-FEB-13 SLICE testing with,2012-FEB-13,Texto adicional dentro de la fecha,separado en notas
+PSI-106,SLICE,PSI-106_SLICE.csv,2012-MAR-05,Test Date,2012-MAR-05 SLICE testing with,2012-MAR-05,Texto adicional dentro de la fecha,separado en notas
+PSI-106,SLICE,PSI-106_SLICE.csv,2012-MAR-19,Test Date,2012-MAR-19 SLICE testing with,2012-MAR-19,Texto adicional dentro de la fecha,separado en notas
+PSI-106,SLICE,PSI-106_SLICE.csv,2012-MAR-23,Test Date,2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%,2012-MAR-23,Texto adicional dentro de la fecha,separado en notas
+PSI-107,SPICE,SPICE SRD 8-23-07 with sigs.doc,-,tabla experimental,,,PSI no publica tabla experimental de SPICE,se usa la matriz planificada del SRD
+PSI-26,BASS,PSI-26_BASS.csv,50,fecha,2103-05-15,2013-05-15,Año 2103 imposible; día GMT 135 = 15-may,corregido
+PSI-39,CFI,PSI-39_CFI_DataSummary.xlsx,1411,fecha,2011-09-06,2017-09-06,Año fuera de secuencia; filas vecinas y código CIR f249 = 6-sep-2017,corregido
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O20,fecha,,,Fecha 2016/2018 fuera de la campaña principal de 2014,conservada con bandera; verificar
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O21,fecha,,,Fecha 2016/2018 fuera de la campaña principal de 2014,conservada con bandera; verificar
+PSI-25,BASS-II,PSI-25_BASS-II.csv,O22,fecha,,,Fecha 2016/2018 fuera de la campaña principal de 2014,conservada con bandera; verificar
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T9,fecha,,,Fecha 2016/2018 fuera de la campaña principal de 2014,conservada con bandera; verificar
+PSI-25,BASS-II,PSI-25_BASS-II.csv,T18,fecha,,,Fecha 2016/2018 fuera de la campaña principal de 2014,conservada con bandera; verificar
+PSI-159,ACME-CFI-G,PSI-159_CFI-G_*.csv,todas,fecha,Test = AADDD…,fecha ISO,Sin columna de fecha,derivada del código de prueba (año + día GMT)
+PSI-10,ACME-FLAME-DESIGN,PSI-10_FlameDesign_*.csv,todas,fecha,Test = AADDD…,fecha ISO,Sin columna de fecha,derivada del código de prueba (año + día GMT)
