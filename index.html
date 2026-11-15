@@ -39,7 +39,7 @@ select,input[type=search],input[type=text]{font:inherit;font-size:14px;color:var
 .btn{font:inherit;font-size:13.5px;border:1px solid var(--ring);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer}
 .btn:hover{background:var(--surface-2)}.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
 .legend{display:flex;flex-wrap:wrap;gap:16px;color:var(--ink-2);font-size:13px;margin:0 0 8px}.legend span{display:inline-flex;align-items:center;gap:6px}
-.tip{position:fixed;z-index:50;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--ring);box-shadow:0 6px 20px rgba(0,0,0,.18);border-radius:10px;padding:9px 11px;font-size:13px;max-width:300px;opacity:0;transition:opacity .08s}
+.tip{position:fixed;z-index:10002;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--ring);box-shadow:0 6px 20px rgba(0,0,0,.18);border-radius:10px;padding:9px 11px;font-size:13px;max-width:300px;opacity:0;transition:opacity .08s}
 .tip .row{display:flex;gap:10px;justify-content:space-between}.tip .k{color:var(--ink-2)}.tip .key{display:inline-block;width:12px;height:2px;vertical-align:middle;margin-right:6px}
 .note{font-size:13px;color:var(--muted)}
 .callout{background:var(--warn-bg);color:var(--warn-ink);border-radius:10px;padding:10px 12px;font-size:13.5px;margin-top:12px}
@@ -287,6 +287,8 @@ main>section.active .grid>.card:nth-child(2){animation-delay:.05s}main>section.a
 #fl-cursor{position:fixed;left:0;top:0;width:28px;height:28px;z-index:10000;pointer-events:none;display:none;transform:translate(-50%,-50%)}
 body.fl-cursor-on,body.fl-cursor-on *{cursor:none!important}
 body.fl-cursor-on #fl-cursor{display:block}
+/* while a chart tooltip is open the llama steps back so the numbers stay readable */
+#fl-llama{transition:opacity .2s}body.tip-on #fl-llama{opacity:.15}
 /* modal windows sit above the custom cursor: give them the normal pointer back */
 body.fl-cursor-on dialog,body.fl-cursor-on dialog *{cursor:auto!important}
 body.fl-cursor-on dialog a,body.fl-cursor-on dialog button{cursor:pointer!important}
@@ -567,11 +569,11 @@ function showTip(x, y, title, rows, color){
   const s = document.createElement("strong"); s.textContent = title; h.appendChild(s); tip.appendChild(h);
   rows.forEach(([k, v]) => { if (v == null || v === "") return; const r = document.createElement("div"); r.className = "row";
     const a = document.createElement("span"); a.className = "k"; a.textContent = k; const b = document.createElement("span"); b.textContent = v; r.append(a, b); tip.appendChild(r); });
-  tip.style.opacity = 1; const w = tip.offsetWidth, hh = tip.offsetHeight;
+  tip.style.opacity = 1; document.body.classList.add("tip-on"); const w = tip.offsetWidth, hh = tip.offsetHeight;
   let left = x + 14, top = y + 14; if (left + w > innerWidth - 8) left = x - w - 14; if (top + hh > innerHeight - 8) top = y - hh - 14;
   tip.style.left = left + "px"; tip.style.top = top + "px";
 }
-const hideTip = () => tip.style.opacity = 0;
+const hideTip = () => { tip.style.opacity = 0; document.body.classList.remove("tip-on"); };
 
 /* ================= router (one section at a time) ================= */
 const ICONS = {overview:'<rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/>',
