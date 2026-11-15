@@ -287,8 +287,9 @@ main>section.active .grid>.card:nth-child(2){animation-delay:.05s}main>section.a
 #fl-cursor{position:fixed;left:0;top:0;width:28px;height:28px;z-index:10000;pointer-events:none;display:none;transform:translate(-50%,-50%)}
 body.fl-cursor-on,body.fl-cursor-on *{cursor:none!important}
 body.fl-cursor-on #fl-cursor{display:block}
-#fl-toggle{position:fixed;right:16px;bottom:16px;z-index:10001;font:600 11.5px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.05em;background:var(--surface);color:var(--ink);border:1px solid var(--ring);border-radius:999px;padding:8px 13px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.14);transition:transform .2s}#fl-toggle:hover{transform:translateY(-2px)}#fl-toggle[aria-pressed="true"]{border-color:#c8102e}
-#fl-badge{position:fixed;right:16px;bottom:54px;z-index:10001;font:10.5px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--ring);border-radius:999px;padding:3px 9px;pointer-events:none}
+#fl-toggle{position:fixed;left:264px;bottom:16px;z-index:10001;font:600 11.5px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.05em;background:var(--surface);color:var(--ink);border:1px solid var(--ring);border-radius:999px;padding:8px 13px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.14);transition:transform .2s}#fl-toggle:hover{transform:translateY(-2px)}#fl-toggle[aria-pressed="true"]{border-color:#c8102e}
+#fl-badge{position:fixed;left:264px;bottom:54px;z-index:10001;font:10.5px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--ring);border-radius:999px;padding:3px 9px;pointer-events:none}
+@media (max-width:900px){#fl-toggle,#fl-badge{left:14px}}
 #fl-cursor{filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)}
 </style>
 <canvas id="fl-particles" aria-hidden="true"></canvas>
@@ -716,7 +717,20 @@ const TOOLS = [
        tests:i.n_pruebas, sessions:i.n_sesiones, o2_pct:[i.o2_min_frac && i.o2_min_frac*100, i.o2_max_frac && i.o2_max_frac*100], pressure_atm:[i.presion_min_atm, i.presion_max_atm], flow_cm_s:[i.flujo_min_cm_s, i.flujo_max_cm_s],
        tests_o2_30:i.n_o2_30, tests_lunar_zone:i.n_zona_lunar, limitations:i.limitaciones_en, variables:i.vars}; }}
 ];
+/* Gemini sometimes writes math as LaTeX ($\ge 30\%$ $O_2$): turn it into plain text */
+function deLatex(t){
+  const SUB = {"0":"₀","1":"₁","2":"₂","3":"₃","4":"₄","5":"₅","6":"₆","7":"₇","8":"₈","9":"₉"};
+  return String(t ?? "")
+    .replace(/\\text\{([^}]*)\}|\\mathrm\{([^}]*)\}/g, (m, a, b) => a ?? b)
+    .replace(/\\geq?\b/g, "≥").replace(/\\leq?\b/g, "≤").replace(/\\times\b/g, "×").replace(/\\approx\b/g, "≈").replace(/\\sim\b/g, "~")
+    .replace(/\\pm\b/g, "±").replace(/\\mu\b/g, "µ").replace(/\\circ\b/g, "°").replace(/\\to\b|\\rightarrow\b/g, "→")
+    .replace(/\\%/g, "%").replace(/\\,|\;|\\!|\\ /g, " ")
+    .replace(/([A-Za-z])_\{?(\d+)\}?/g, (m, l, d) => l + d.split("").map(c => SUB[c]).join(""))
+    .replace(/\$\$?/g, "").replace(/\\([a-zA-Z]+)/g, "$1")
+    .replace(/(\d)\s*%/g, "$1 %").replace(/[ \t]{2,}/g, " ");
+}
 function renderAnswer(text){
+  text = deLatex(text);
   const lines = esc(text).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").split(/\n/);
   let html = "", inList = false;
   for (const l of lines){ const m = l.match(/^\s*[-•*]\s+(.*)/);

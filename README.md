@@ -1,6 +1,6 @@
-# FireDB — AI-powered fire-safety insights from NASA microgravity combustion data
+# Flame in Freefall — SI-powered fire-safety dashboard by Team Nova Data
 
-NASA Space Apps Challenge 2026 · Challenge: **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**
+NASA Space Apps Challenge 2026 · Team **Nova Data** · Challenge: **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**
 
 FireDB unifies the experimental tables of **19 combustion investigations** from NASA's Physical Sciences Informatics (PSI) repository into one clean database and turns them into an interactive, bilingual (English/Spanish) dashboard with an AI assistant that answers questions using only those data.
 
