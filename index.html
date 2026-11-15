@@ -287,6 +287,11 @@ main>section.active .grid>.card:nth-child(2){animation-delay:.05s}main>section.a
 #fl-cursor{position:fixed;left:0;top:0;width:28px;height:28px;z-index:10000;pointer-events:none;display:none;transform:translate(-50%,-50%)}
 body.fl-cursor-on,body.fl-cursor-on *{cursor:none!important}
 body.fl-cursor-on #fl-cursor{display:block}
+/* modal windows sit above the custom cursor: give them the normal pointer back */
+body.fl-cursor-on dialog,body.fl-cursor-on dialog *{cursor:auto!important}
+body.fl-cursor-on dialog a,body.fl-cursor-on dialog button{cursor:pointer!important}
+body.fl-cursor-on dialog::backdrop{cursor:auto}
+body:has(dialog[open]) #fl-cursor{display:none!important}
 #fl-toggle{position:fixed;left:264px;bottom:16px;z-index:10001;font:600 11.5px/1 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.05em;background:var(--surface);color:var(--ink);border:1px solid var(--ring);border-radius:999px;padding:8px 13px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.14);transition:transform .2s}#fl-toggle:hover{transform:translateY(-2px)}#fl-toggle[aria-pressed="true"]{border-color:#c8102e}
 #fl-badge{position:fixed;left:264px;bottom:54px;z-index:10001;font:10.5px system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid var(--ring);border-radius:999px;padding:3px 9px;pointer-events:none}
 @media (max-width:900px){#fl-toggle,#fl-badge{left:14px}}
